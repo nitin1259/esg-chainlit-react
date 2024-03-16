@@ -50,30 +50,60 @@ export function Playground() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100 dark:bg-gray-900 flex flex-col">
-      <div className="flex-1 overflow-auto p-6">
-        <div className="space-y-4">
-          {messages.map((message) => renderMessage(message))}
+    // <div className="min-h-screen bg-gray-100 dark:bg-gray-900 flex flex-col">
+    //   <div className="flex-1 overflow-auto p-6">
+    //     <div className="space-y-4">
+    //       {messages.map((message) => renderMessage(message))}
+    //     </div>
+    //   </div>
+    //   <div className="border-t p-4 bg-white dark:bg-gray-800">
+    //     <div className="flex items-center space-x-2">
+    //       <Input
+    //         autoFocus
+    //         className="flex-1"
+    //         id="message-input"
+    //         placeholder="Type a message"
+    //         value={inputValue}
+    //         onChange={(e) => setInputValue(e.target.value)}
+    //         onKeyUp={(e) => {
+    //           if (e.key === "Enter") {
+    //             handleSendMessage();
+    //           }
+    //         }}
+    //       />
+    //       <Button onClick={handleSendMessage} type="submit">
+    //         Send
+    //       </Button>
+    //     </div>
+    //   </div>
+    // </div>
+
+    <div className="flex flex-col flex-1 overflow-y-auto">
+      <div className="min-h-screen bg-gray-100 dark:bg-gray-900 flex flex-col">
+        <div className="flex-1 overflow-auto p-6 h-full">
+          <div className="space-y-4">
+            {messages.map((message) => renderMessage(message))}
+          </div>
         </div>
-      </div>
-      <div className="border-t p-4 bg-white dark:bg-gray-800">
-        <div className="flex items-center space-x-2">
-          <Input
-            autoFocus
-            className="flex-1"
-            id="message-input"
-            placeholder="Type a message"
-            value={inputValue}
-            onChange={(e) => setInputValue(e.target.value)}
-            onKeyUp={(e) => {
-              if (e.key === "Enter") {
-                handleSendMessage();
-              }
-            }}
-          />
-          <Button onClick={handleSendMessage} type="submit">
-            Send
-          </Button>
+        <div className="border-t p-4 bg-white dark:bg-gray-800">
+          <div className="flex items-center space-x-2">
+            <Input
+              autoFocus
+              className="flex-1"
+              id="message-input"
+              placeholder="Type a message"
+              value={inputValue}
+              onChange={(e) => setInputValue(e.target.value)}
+              onKeyUp={(e) => {
+                if (e.key === "Enter") {
+                  handleSendMessage();
+                }
+              }}
+            />
+            <Button onClick={handleSendMessage} type="submit">
+              Send
+            </Button>
+          </div>
         </div>
       </div>
     </div>
