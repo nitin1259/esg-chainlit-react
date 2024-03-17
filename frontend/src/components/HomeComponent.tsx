@@ -4,6 +4,7 @@ import Sidebar from "./Sidebar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Playground } from "./playground";
 import FileUploadComponent from "./PdfUploadComponent";
+import ReportDisplayComponent from "./ReportDisplayComponent";
 
 const HomeComponent: React.FC = () => {
   return (
@@ -17,6 +18,7 @@ const HomeComponent: React.FC = () => {
               <Route path="/" element={<Playground />} />
               <Route path="/askanything" element={<Playground />} />
               <Route path="/upload" element={<FileUploadComponent />} />
+              <Route path="/reports" element={<ReportDisplayComponent />} />
             </Routes>
           </div>
         </div>
