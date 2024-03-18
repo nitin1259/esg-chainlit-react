@@ -1,7 +1,3 @@
----
-title: "Custom frontend with Chainlit!"
----
-
 # Custom frontend with Chainlit!
 
 ## Install Chainlit and OpenAI
