@@ -1,4 +1,4 @@
-# Custom frontend with Chainlit!
+# Custom React frontend with Chainlit!
 
 ## Install Chainlit and OpenAI
 
