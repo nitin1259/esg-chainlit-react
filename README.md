@@ -10,6 +10,7 @@ pip install -U chainlit openai
 
 Create a `./chainlit-backend/.env` file:
 
+## create a .env and provide OPENAI API Key
 ```.env
 OPENAI_API_KEY=YOUR_KEY
 ```
