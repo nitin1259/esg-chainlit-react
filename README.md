@@ -19,6 +19,7 @@ Start the server in headless mode:
 
 ```shell
 cd ./chainlit-backend
+
 chainlit run app.py -h
 ```
 
