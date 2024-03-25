@@ -26,6 +26,8 @@ chainlit run app.py -h
 
 ```shell
 cd ./frontend
+
 npm i
+
 npm run dev
 ```
