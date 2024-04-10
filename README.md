@@ -12,7 +12,7 @@ Create a `./chainlit-backend/.env` file:
 
 ## create a .env and provide OPENAI API Key
 ```.env
-OPENAI_API_KEY=YOUR_KEY
+OPENAI_API_KEY=YOUR_API_KEY
 ```
 
 Start the server in headless mode:
